@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 980px;
+    margin: auto;
+}
+.banner{
+    text-align: center;
+    background-color: #360B21;
+    padding: 25px 0px;
+}
+.main-nav > nav{
+    float: left;
+    height: 40px;
+    width: 70%;
+    background-color: blueviolet;
+}
+.main-nav > section{
+    float: right;
+    height: 40px;
+    width: 30%;
+    background-color: burlywood;
+}
+.clearfix:after{
+display: table;
+clear: both;
+content: "";
+}
+
+main{
+    min-height: 550px;
+    
+}
+footer{
+    height: 50px;
+    background-color: #360B21;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+}

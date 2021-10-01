@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+        }
+        .container::after{
+            clear: both;
+            display: table;
+            content: "";
+        }
+        .product-list{
+    display: grid;
+    height: 270px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 16px;
+}
+.product-list > div {
+    background-color: #FFFFFF
+    /* padding: 20px 0px; */
+}
+.product-item{
+    border-radius: 8px;
+}
+.product-item > a{
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+}
+.sourse-content{
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.author-content{
+    color: #707070;
+    margin-top: 16px;
+}
+.price-sale-sourse{
+    float: right;
+    margin-right: 4px;
+}
+.price-sourse{
+    float: right;
+    margin-right: 4px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.rate {
+    margin-top: 6px;
+}
+.product-item:hover{
+    box-shadow: 10px 10px 30px rgb(98, 98, 151);
+}
+.sale-off {
+    position: absolute;
+    left: 0px;
+    width: 50px;
+}
+.sale-off > .sale-styles{
+    background-color: #f67052;
+    padding: 6px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-list">
+            <!-- item 1 -->
+            <div class="product-item">
+                <a href="#">
+                    <div class="sale-off">
+                        <p class="sale-styles">-72%</p>
+                    </div>
+                    <img src="../ass/assets/product-top2.jpg" alt="product1" width="300px"
+                        style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <div class="sourse-content">Học đệm hát Guitar cùng Haketu</div>
+                    <div class="clearfix author-content">
+                        <span>
+                            Đỗ Trung Thành
+                        </span>
+                        <span class="price-sale-sourse">
+                            <del>700.000<sup>đ</sup></del>
+                        </span>
+                    </div>
+                    <div class="rate">
+                        <span>
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png " alt="" width="16px" height="16px
+                        ">
+                        </span>
+                        <span class="price-sourse">199.000<sup>đ</sup></span>
+                    </div>
+                </a>
+            </div>
+            <!-- item 2 -->
+            <div class="product-item">
+                <a href="#">
+                    <div class="sale-off">
+                        <p class="sale-styles">-34%</p>
+                    </div>
+                    <img src="../ass/assets/product-top2.jpg" alt="product1" width="290px"
+                        style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <div class="sourse-content">Khởi nghiệp thực chiến</div>
+                    <div class="clearfix author-content">
+                        <span>
+                            Nguyễn Minh Cường
+                        </span>
+                        <span class="price-sale-sourse">
+                            <del>600.000<sup>đ</sup></del>
+                        </span>
+                    </div>
+                    <div class="rate">
+                        <span>
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                    ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                    ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                    ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                    ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                    ">
+                        </span>
+                        <span class="price-sourse">399.000<sup>đ</sup></span>
+                    </div>
+                </a>
+            </div>
+            <!-- item 3 -->
+            <div class="product-item">
+                <a href="#">
+                    <div class="sale-off">
+                        <p class="sale-styles">-63%</p>
+                    </div>
+                    <img src="../ass/assets/product-top3.jpg" alt="product1" width="290px"
+                        style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <div class="sourse-content">Bán hàng giá cao</div>
+                    <div class="clearfix author-content">
+                        <span>
+                            Phạm Thành Long
+                        </span>
+                        <span class="price-sale-sourse">
+                            <del>800.000<sup>đ</sup></del>
+                        </span>
+                    </div>
+                    <div class="rate">
+                        <span>
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                        </span>
+                        <span class="price-sourse">299.000<sup>đ</sup></span>
+                    </div>
+                </a>
+            </div>
+            <!-- item 4 -->
+            <div class="product-item">
+                <a href="#">
+                    <div class="sale-off">
+                        <p class="sale-styles">-40%</p>
+                    </div>
+                    <img src="../ass/assets/product-top4.jpg" alt="product1" width="290px"
+                        style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <div class="sourse-content">Quản trị cuộc đời</div>
+                    <div class="clearfix author-content">
+                        <span>
+                            Lê Thẩm Dương
+                        </span>
+                        <span class="price-sale-sourse">
+                            <del>1.000.000<sup>đ</sup></del>
+                        </span>
+                    </div>
+                    <div class="rate">
+                        <span>
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                        </span>
+                        <span class="price-sourse">599.000<sup>đ</sup></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="product-list">
+            <!-- item 1 -->
+            <div class="product-item">
+                <a href="#">
+                    <div class="sale-off">
+                        <p class="sale-styles">-72%</p>
+                    </div>
+                    <img src="../ass/assets/product-top2.jpg" alt="product1" width="300px"
+                        style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <div class="sourse-content">Học đệm hát Guitar cùng Haketu</div>
+                    <div class="clearfix author-content">
+                        <span>
+                            Đỗ Trung Thành
+                        </span>
+                        <span class="price-sale-sourse">
+                            <del>700.000<sup>đ</sup></del>
+                        </span>
+                    </div>
+                    <div class="rate">
+                        <span>
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png " alt="" width="16px" height="16px
+                        ">
+                        </span>
+                        <span class="price-sourse">199.000<sup>đ</sup></span>
+                    </div>
+                </a>
+            </div>
+            <!-- item 2 -->
+            <div class="product-item">
+                <a href="#">
+                    <div class="sale-off">
+                        <p class="sale-styles">-34%</p>
+                    </div>
+                    <img src="../ass/assets/product-top2.jpg" alt="product1" width="290px"
+                        style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <div class="sourse-content">Khởi nghiệp thực chiến</div>
+                    <div class="clearfix author-content">
+                        <span>
+                            Nguyễn Minh Cường
+                        </span>
+                        <span class="price-sale-sourse">
+                            <del>600.000<sup>đ</sup></del>
+                        </span>
+                    </div>
+                    <div class="rate">
+                        <span>
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                    ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                    ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                    ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                    ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                    ">
+                        </span>
+                        <span class="price-sourse">399.000<sup>đ</sup></span>
+                    </div>
+                </a>
+            </div>
+            <!-- item 3 -->
+            <div class="product-item">
+                <a href="#">
+                    <div class="sale-off">
+                        <p class="sale-styles">-63%</p>
+                    </div>
+                    <img src="../ass/assets/product-top3.jpg" alt="product1" width="290px"
+                        style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <div class="sourse-content">Bán hàng giá cao</div>
+                    <div class="clearfix author-content">
+                        <span>
+                            Phạm Thành Long
+                        </span>
+                        <span class="price-sale-sourse">
+                            <del>800.000<sup>đ</sup></del>
+                        </span>
+                    </div>
+                    <div class="rate">
+                        <span>
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                        </span>
+                        <span class="price-sourse">299.000<sup>đ</sup></span>
+                    </div>
+                </a>
+            </div>
+            <!-- item 4 -->
+            <div class="product-item">
+                <a href="#">
+                    <div class="sale-off">
+                        <p class="sale-styles">-40%</p>
+                    </div>
+                    <img src="../ass/assets/product-top4.jpg" alt="product1" width="290px"
+                        style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                    <div class="sourse-content">Quản trị cuộc đời</div>
+                    <div class="clearfix author-content">
+                        <span>
+                            Lê Thẩm Dương
+                        </span>
+                        <span class="price-sale-sourse">
+                            <del>1.000.000<sup>đ</sup></del>
+                        </span>
+                    </div>
+                    <div class="rate">
+                        <span>
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                            <img src="../ass/assets/star.png" alt="" width="16px" height="16px
+                        ">
+                        </span>
+                        <span class="price-sourse">599.000<sup>đ</sup></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    
+    font-family: Helvetica;
 }
 .container{
     width: 85%;
@@ -91,7 +91,6 @@ ul > li:hover ul.submenu {
 .main-title{
     margin-top: 30px;
 }
-
 .product-list{
     display: grid;
     height: 270px;
@@ -111,7 +110,10 @@ ul > li:hover ul.submenu {
     color: #000000;
     position: relative;
 }
-.sourse-content{
+.product-item-content{
+ padding: 6px;
+}
+.product-item-content .sourse-content{
     margin-top: 8px;
     font-size: 20px;
     font-weight: bold;
@@ -120,7 +122,7 @@ ul > li:hover ul.submenu {
     color: #707070;
     margin-top: 16px;
 }
-.price-sale-sourse{
+.product-item-content .price-sale-sourse{
     float: right;
     margin-right: 4px;
 }
@@ -296,6 +298,9 @@ footer{
 }
 .container-content {
     padding: 10px;   
+}
+.content > div{
+    margin-top: 8px;
 }
 .footer-content .content-title {
     color: #F26C4F;

@@ -69,15 +69,14 @@ ul > li:hover ul.submenu {
 .header-nav > section form input {
     height: 25px;
     border-radius: 25px;
-    width: 250px;
+    width: 200px;
     border-style: none;
-    color: #555555;
     background-color: #ffffff;
     border: 1px solid #cccccc;
 }
 .header-nav > section form button {
-    height: 25px;
-    border-radius: 20px;
+    height: 28px;
+    border-radius: 16px;
     background-color: #ffffff;
 }
 .clearfix::after{
@@ -137,6 +136,8 @@ ul > li:hover ul.submenu {
 }
 .product-item:hover{
     box-shadow: 10px 10px 30px rgb(98, 98, 151);
+    transition: ease-in 0.35s;
+    transition: ease-out 0.15s;
 }
 .sale-off {
     position: absolute;
@@ -191,6 +192,8 @@ ul > li:hover ul.submenu {
 }
 .target-box-content:hover{
     box-shadow: 10px 10px 30px rgb(98, 98, 151);
+    transition: ease-in 0.35s;
+    transition: ease-out 0.15s;
 }
 
 
@@ -240,6 +243,8 @@ h1 {
 }
 .box-container:hover{
     box-shadow: 10px 10px 30px rgb(98, 98, 151);
+    transition: ease-in 0.35s;
+    transition: ease-out 0.15s;
 }
 
 .title-giai-phap > h2{
@@ -277,6 +282,8 @@ h1 {
 
 .content-giai-phap:hover {
     box-shadow: 10px 10px 30px rgb(98, 98, 151);
+    transition: ease-in 0.35s;
+    transition: ease-out 0.15s;
 }
 
 footer{
